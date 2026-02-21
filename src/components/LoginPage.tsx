@@ -147,8 +147,8 @@ const ElectricPings = () => {
           y1={`${electrodes[a].y}%`}
           x2={`${electrodes[b].x}%`}
           y2={`${electrodes[b].y}%`}
-          stroke="hsl(195, 80%, 40%)"
-          strokeOpacity={0.06}
+          stroke="hsl(260, 70%, 60%)"
+          strokeOpacity={0.08}
           strokeWidth={0.5}
         />
       ))}
@@ -160,7 +160,7 @@ const ElectricPings = () => {
           cx={`${e.x}%`}
           cy={`${e.y}%`}
           r={glowingElectrodes.has(i) ? 4 : 1.5}
-          fill={glowingElectrodes.has(i) ? "hsl(30, 90%, 55%)" : "hsl(195, 80%, 40%)"}
+          fill={glowingElectrodes.has(i) ? "hsl(270, 80%, 65%)" : "hsl(260, 50%, 55%)"}
           opacity={glowingElectrodes.has(i) ? 0.9 : 0.2}
           filter={glowingElectrodes.has(i) ? "url(#electrode-glow)" : undefined}
           style={{ transition: "all 0.6s ease-in-out" }}
@@ -181,7 +181,7 @@ const ElectricPings = () => {
             cx={`${x}%`}
             cy={`${y}%`}
             r={3}
-            fill="hsl(30, 90%, 55%)"
+            fill="hsl(270, 80%, 65%)"
             opacity={opacity * 0.8}
             filter="url(#ping-glow)"
           />
@@ -210,14 +210,14 @@ const LoginPage = () => {
           alt=""
           className="absolute inset-0 w-full h-full object-cover animate-wave"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-background/40" />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/60 via-transparent to-background/60" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[hsl(240,20%,96%)] via-[hsl(250,25%,95%)]/80 to-[hsl(260,30%,94%)]/50" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[hsl(240,20%,96%)]/70 via-transparent to-[hsl(240,20%,96%)]/70" />
         <ElectricPings />
       </div>
 
       {/* Glow effects */}
-      <div className="absolute top-1/4 left-1/3 w-96 h-96 bg-primary/10 rounded-full blur-[120px] animate-glow-pulse" />
-      <div className="absolute bottom-1/4 right-1/3 w-72 h-72 bg-accent/10 rounded-full blur-[100px] animate-glow-pulse" style={{ animationDelay: "2s" }} />
+      <div className="absolute top-1/4 left-1/3 w-96 h-96 bg-[hsl(270,70%,60%)]/10 rounded-full blur-[120px] animate-glow-pulse" />
+      <div className="absolute bottom-1/4 right-1/3 w-72 h-72 bg-[hsl(250,60%,55%)]/10 rounded-full blur-[100px] animate-glow-pulse" style={{ animationDelay: "2s" }} />
 
     </div>
   );
