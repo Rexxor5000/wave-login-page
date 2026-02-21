@@ -23,21 +23,15 @@ const LoginPage = () => {
         <img
           src={loginBg}
           alt=""
-          className="absolute inset-0 w-full h-full object-cover animate-flow"
+          className="absolute inset-0 w-full h-full object-cover animate-wave"
         />
-        <img
-          src={loginBg}
-          alt=""
-          className="absolute inset-0 w-full h-full object-cover animate-flow2 mix-blend-screen"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/50 via-transparent to-background/40" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-background/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/60 via-transparent to-background/60" />
       </div>
 
       {/* Glow effects */}
       <div className="absolute top-1/4 left-1/3 w-96 h-96 bg-primary/10 rounded-full blur-[120px] animate-glow-pulse" />
-      <div className="absolute bottom-1/3 right-1/4 w-80 h-80 bg-accent/15 rounded-full blur-[100px] animate-glow-pulse" style={{ animationDelay: "2s" }} />
-      <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-primary/5 rounded-full blur-[80px] animate-glow-pulse" style={{ animationDelay: "4s" }} />
+      <div className="absolute bottom-1/4 right-1/3 w-72 h-72 bg-accent/10 rounded-full blur-[100px] animate-glow-pulse" style={{ animationDelay: "2s" }} />
 
       {/* Login card */}
       <motion.div
